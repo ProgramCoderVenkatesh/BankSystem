@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HistoryClass">
+   <children>
+      <Button layoutX="540.0" layoutY="25.0" minWidth="46.0" mnemonicParsing="false" onAction="#historyFunc" prefHeight="30.0" prefWidth="46.0" style="-fx-background-radius: 50;" text="Fetch">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label fx:id="historyHolderNameLabel" layoutX="14.0" layoutY="22.0" prefHeight="36.0" prefWidth="417.0" text="Holder Name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="historyAccountNoLabel" layoutX="14.0" layoutY="50.0" text="Account No.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="startMonthComboBox" layoutX="425.0" layoutY="8.0" prefHeight="26.0" prefWidth="106.0" promptText="Start Month" />
+      <ComboBox fx:id="endMonthComboBox" layoutX="425.0" layoutY="46.0" prefHeight="26.0" prefWidth="106.0" promptText="End Month" />
+      <Pane fx:id="headerPane" layoutX="15.0" layoutY="83.0" prefHeight="29.0" prefWidth="569.0" style="-fx-border-color: black; -fx-border-width: 1 0 1 0;">
+         <children>
+            <Label layoutX="5.0" layoutY="1.0" prefHeight="26.0" prefWidth="78.0" text="Date">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="83.0" layoutY="3.0" prefHeight="26.0" prefWidth="219.0" text="Particulars">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="302.0" layoutY="3.0" prefHeight="26.0" prefWidth="95.0" text="Withdrawals">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="397.0" layoutY="3.0" prefHeight="26.0" prefWidth="89.0" text="Deposits">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="486.0" layoutY="3.0" prefHeight="26.0" prefWidth="89.0" text="Balance">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

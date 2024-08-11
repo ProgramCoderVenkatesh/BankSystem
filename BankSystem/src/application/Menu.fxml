@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BankMenu">
+   <children>
+      <Label fx:id="holderNameLabel" layoutX="14.0" layoutY="32.0" text="Holder Name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="accountNoLabel" layoutX="14.0" layoutY="68.0" text="Account No.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="balanceLabel" alignment="CENTER_RIGHT" layoutX="173.0" layoutY="50.0" prefHeight="30.0" prefWidth="263.0" text="8000.00">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="moneyTransferImageView" fitHeight="56.0" fitWidth="56.0" layoutX="119.0" layoutY="168.0" onMouseClicked="#details" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/details.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="85.0" layoutX="189.0" layoutY="164.0" onMouseClicked="#transfer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/money-transfer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="282.0" layoutY="168.0" onMouseClicked="#history" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/history.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="119.0" layoutY="244.0" onMouseClicked="#withdraw" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/money-withdrawal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="203.0" layoutY="244.0" onMouseClicked="#deposit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/deposit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="282.0" layoutY="244.0" onMouseClicked="#setOrChangePin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/password-code.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="119.0" layoutY="314.0" onMouseClicked="#changePhone" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/phone.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="203.0" layoutY="314.0" onMouseClicked="#changeEmail" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/email.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="282.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/log.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
